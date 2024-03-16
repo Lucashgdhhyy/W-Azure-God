@@ -31,3 +31,11 @@ Tab:AddToggle({
 		print(Value)
 	end    
 })
+Tab:AddButton({
+	Name = "Close HUD",
+	Callback = function()
+      		print("button pressed")     OrionLib:Destroy()
+  	end    
+})
+
+OrionLib:Init()
