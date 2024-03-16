@@ -1,41 +1,20 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "W-Azure V3 Fanmade Beta, HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "W-Azure V3 Fanmade Beta", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
-	Name = "Main",
+	Name = "W-Azure Logs!",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 OrionLib:MakeNotification({
 	Name = "W-Azure V3",
-	Content = " Trash Hub, Switch to W-Azure V3 Paid Edition Fanmade",
+	Content = "Starting bounty hunter",
 	Image = "rbxassetid://4483345998",
-	Time = 25
-})
-OrionLib:MakeNotification({
-	Name = "W-Azure V3",
-	Content = " Fps Boost Executed(Not working)",
-	Image = "rbxassetid://4483345998",
-	Time = 25
-})
-local Section = Tab:AddSection({
-	Name = "Logs"
-})
-Tab:AddParagraph("W-Azure V3 Fanmade","Did You Know W-Azure V3 Fanmade Version Is In Beta")
-local Section = Tab:AddSection({
-	Name = "Fps:D"
-})
-Tab:AddToggle({
-	Name = "Boost Fps",
-	Default = true,
-	Callback = function(Value)
-		print(Value)
-	end    
-})
-Tab:AddButton({
-	Name = "Close HUD",
-	Callback = function()
-      		print("button pressed")     OrionLib:Destroy()
-  	end    
+	Time = 99999999999999
 })
 
-OrionLib:Init()
+OrionLib:MakeNotification({
+	Name = "W-Azure V3",
+	Content = "Bounty Win 0/300000(don work)",
+	Image = "rbxassetid://4483345998",
+	Time = 99999999999999
+})
